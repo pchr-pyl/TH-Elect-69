@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MapPin, AlertTriangle, TrendingUp, Users, Database } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, Cell, ScatterChart, Scatter, ZAxis } from 'recharts';
 import KPI_Card from '../components/KPI_Card';
@@ -6,7 +6,17 @@ import ProvinceAnalysis from '../components/ProvinceAnalysis';
 import { getPartyColor } from '../constants/partyColors';
 
 function OverviewTab({ data, kpis, seatDistributionData, topDiscrepancyData, scatterData, sortedTableData, provinceSummary, provinceAnalysisData, selectedRegion, setSelectedRegion }) {
+  const [tableFilter, setTableFilter] = useState('all');
+  
   if (!kpis) return null;
+
+  const filteredTableData = sortedTableData.filter(row => {
+    if (tableFilter === 'all') return true;
+    if (tableFilter === 'constituencyGreater') return row.discrepancy > 0;
+    if (tableFilter === 'partyListGreater') return row.discrepancy < 0;
+    if (tableFilter === 'noDiscrepancy') return row.discrepancy === 0;
+    return true;
+  });
 
   return (
     <div className="space-y-6 animate-in fade-in duration-300" role="tabpanel" id="overview-panel" aria-labelledby="overview-tab">
@@ -137,9 +147,58 @@ function OverviewTab({ data, kpis, seatDistributionData, topDiscrepancyData, sca
 
       {/* Data Table */}
       <div className="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden">
-        <div className="p-6 border-b border-slate-100 flex justify-between items-center">
-          <h3 className="text-lg font-semibold text-slate-800">ข้อมูลรายเขต (เรียงตามยอดเขย่งสูงสุด)</h3>
-          <span className="text-sm text-slate-500">ทั้งหมด {sortedTableData.length} เขต</span>
+        <div className="p-6 border-b border-slate-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div>
+            <h3 className="text-lg font-semibold text-slate-800">ข้อมูลรายเขต (เรียงตามยอดเขย่งสูงสุด)</h3>
+            <span className="text-sm text-slate-500">แสดง {filteredTableData.length} จาก {sortedTableData.length} เขต</span>
+          </div>
+          
+          {/* Filter Buttons */}
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => setTableFilter('all')}
+              className={`px-3 py-1.5 text-xs font-medium rounded-lg transition-colors ${
+                tableFilter === 'all'
+                  ? 'bg-slate-800 text-white'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+              }`}
+            >
+              ทั้งหมด
+            </button>
+            <button
+              onClick={() => setTableFilter('constituencyGreater')}
+              className={`px-3 py-1.5 text-xs font-medium rounded-lg transition-colors flex items-center gap-1 ${
+                tableFilter === 'constituencyGreater'
+                  ? 'bg-red-100 text-red-700 border border-red-300'
+                  : 'bg-red-50 text-red-600 hover:bg-red-100'
+              }`}
+            >
+              <span className="w-2 h-2 rounded-full bg-red-500"></span>
+              ส.ส. เขต &gt; บัญชีรายชื่อ
+            </button>
+            <button
+              onClick={() => setTableFilter('partyListGreater')}
+              className={`px-3 py-1.5 text-xs font-medium rounded-lg transition-colors flex items-center gap-1 ${
+                tableFilter === 'partyListGreater'
+                  ? 'bg-blue-100 text-blue-700 border border-blue-300'
+                  : 'bg-blue-50 text-blue-600 hover:bg-blue-100'
+              }`}
+            >
+              <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+              บัญชีรายชื่อ &gt; ส.ส. เขต
+            </button>
+            <button
+              onClick={() => setTableFilter('noDiscrepancy')}
+              className={`px-3 py-1.5 text-xs font-medium rounded-lg transition-colors flex items-center gap-1 ${
+                tableFilter === 'noDiscrepancy'
+                  ? 'bg-green-100 text-green-700 border border-green-300'
+                  : 'bg-green-50 text-green-600 hover:bg-green-100'
+              }`}
+            >
+              <span className="w-2 h-2 rounded-full bg-green-500"></span>
+              สมบูรณ์ ไม่มีเขย่ง
+            </button>
+          </div>
         </div>
         <div className="overflow-x-auto max-h-[600px]">
           <table className="w-full text-left border-collapse">
@@ -154,7 +213,7 @@ function OverviewTab({ data, kpis, seatDistributionData, topDiscrepancyData, sca
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {sortedTableData.map((row, idx) => (
+              {filteredTableData.map((row, idx) => (
                 <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
                   <td className="px-6 py-3 text-sm text-slate-800 font-medium">{row.province}</td>
                   <td className="px-6 py-3 text-sm text-slate-600">{row.district}</td>
