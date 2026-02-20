@@ -12,6 +12,7 @@ export const PARTY_COLORS = {
   'กล้าธรรม': '#22c55e', // Green
   'เสรีรวมไทย': '#eed341', // Yellow
   'เป็นธรรม': '#0097a8', // Teal
+  'ไทรวมพลัง': '#ec4899', // Pink
   'Other': '#94a3b8' // Gray
 };
 
