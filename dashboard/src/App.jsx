@@ -11,6 +11,7 @@ import ReferendumTab from './components/ReferendumTab';
 
 // Constants
 import { PARTY_COLORS } from './constants/partyColors';
+import { getRegion, REGIONS } from './constants/regionMapping';
 
 // Data validation schema (simple validation without Zod for now)
 const validatePlotData = (data) => {
@@ -28,6 +29,7 @@ function AppContent() {
   const [activeTab, setActiveTab] = useState('overview');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [selectedRegion, setSelectedRegion] = useState('ทั้งหมด');
 
   // Function to process raw JSON data
   const processData = (plotData, constituencyData, referendumData) => {
@@ -73,6 +75,7 @@ function AppContent() {
         return {
           province,
           district,
+          region: getRegion(province),
           constituencyVoters,
           partyListVoters,
           discrepancy,
@@ -119,17 +122,23 @@ function AppContent() {
     loadData();
   }, []);
 
-  // --- Derived Data / KPIs ---
+  // --- Filtered Data based on Region ---
+  const filteredData = useMemo(() => {
+    if (selectedRegion === 'ทั้งหมด') return data;
+    return data.filter(d => d.region === selectedRegion);
+  }, [data, selectedRegion]);
+
+  // --- Derived Data / KPIs (using filteredData - affected by region filter) ---
   const kpis = useMemo(() => {
-    if (data.length === 0) return null;
+    if (filteredData.length === 0) return null;
 
     let totalDiscrepancy = 0;
-    let maxDiscrepancyDistrict = data[0];
+    let maxDiscrepancyDistrict = filteredData[0];
     const constituencyWins = {};
     const partyListWins = {};
     let criticalCount = 0;
 
-    data.forEach(row => {
+    filteredData.forEach(row => {
       totalDiscrepancy += row.absDiscrepancy;
       
       if (row.absDiscrepancy > maxDiscrepancyDistrict.absDiscrepancy) {
@@ -148,7 +157,7 @@ function AppContent() {
     const topPartyListParty = Object.entries(partyListWins).sort((a, b) => b[1] - a[1])[0];
 
     return {
-      totalDistricts: data.length,
+      totalDistricts: filteredData.length,
       totalDiscrepancy,
       maxDiscrepancyDistrict,
       topConstituencyParty,
@@ -156,9 +165,9 @@ function AppContent() {
       constituencyWins,
       criticalCount
     };
-  }, [data]);
+  }, [filteredData]);
 
-  // --- Chart Data ---
+  // --- Chart Data (using filteredData - affected by top region filter) ---
   const seatDistributionData = useMemo(() => {
     if (!kpis) return [];
     return Object.entries(kpis.constituencyWins)
@@ -167,52 +176,110 @@ function AppContent() {
   }, [kpis]);
 
   const topDiscrepancyData = useMemo(() => {
-    return [...data]
+    return [...filteredData]
       .sort((a, b) => b.absDiscrepancy - a.absDiscrepancy)
       .slice(0, 15)
       .map(d => ({
         name: `${d.province} เขต ${d.district}`,
         discrepancy: d.discrepancy,
         absDiscrepancy: d.absDiscrepancy,
-        fill: d.discrepancy > 0 ? '#ef4444' : '#3b82f6' // Red for > 0, Blue for < 0
+        fill: d.discrepancy > 0 ? '#ef4444' : '#3b82f6'
       }));
-  }, [data]);
+  }, [filteredData]);
 
   const scatterData = useMemo(() => {
-    return data.map(d => ({
+    return filteredData.map(d => ({
       x: d.constituencyVoters,
       y: d.partyListVoters,
       name: `${d.province} เขต ${d.district}`,
       discrepancy: d.absDiscrepancy
     }));
-  }, [data]);
+  }, [filteredData]);
 
   const sortedTableData = useMemo(() => {
-    return [...data].sort((a, b) => b.absDiscrepancy - a.absDiscrepancy);
-  }, [data]);
+    return [...filteredData].sort((a, b) => b.absDiscrepancy - a.absDiscrepancy);
+  }, [filteredData]);
 
   const criticalDistrictsData = useMemo(() => {
-    return data.filter(d => d.isCritical).sort((a, b) => b.absDiscrepancy - a.absDiscrepancy);
-  }, [data]);
+    return filteredData.filter(d => d.isCritical).sort((a, b) => b.absDiscrepancy - a.absDiscrepancy);
+  }, [filteredData]);
 
   const invalidBallotsChartData = useMemo(() => {
-    return [...data]
+    return [...filteredData]
       .filter(d => d.invalidPercentage > 0)
       .sort((a, b) => b.absDiscrepancy - a.absDiscrepancy)
-      .slice(0, 50) // Top 50 by discrepancy to see correlation
+      .slice(0, 50)
       .map(d => ({
         name: `${d.province} เขต ${d.district}`,
         discrepancy: d.absDiscrepancy,
         invalidPercentage: parseFloat(d.invalidPercentage.toFixed(2))
       }));
-  }, [data]);
+  }, [filteredData]);
 
   const turnoutComparisonData = useMemo(() => {
-    return [...data]
+    return [...filteredData]
       .filter(d => d.turnoutDifference !== 0 && !isNaN(d.turnoutDifference))
-      .sort((a, b) => b.turnoutDifference - a.turnoutDifference)
-      .slice(0, 20);
-  }, [data]);
+      .sort((a, b) => b.turnoutDifference - a.turnoutDifference);
+  }, [filteredData]);
+
+  // --- Province Summary (using filteredData) ---
+  const provinceSummary = useMemo(() => {
+    const summary = {};
+    filteredData.forEach(row => {
+      if (!summary[row.province]) {
+        summary[row.province] = {
+          province: row.province,
+          region: row.region,
+          districtCount: 0,
+          totalConstituencyVoters: 0,
+          totalPartyListVoters: 0,
+          totalDiscrepancy: 0
+        };
+      }
+      summary[row.province].districtCount++;
+      summary[row.province].totalConstituencyVoters += row.constituencyVoters;
+      summary[row.province].totalPartyListVoters += row.partyListVoters;
+      summary[row.province].totalDiscrepancy += row.absDiscrepancy;
+    });
+    return Object.values(summary).sort((a, b) => a.province.localeCompare(b.province, 'th'));
+  }, [filteredData]);
+
+  // --- Province Analysis Data (for detailed province breakdown) ---
+  const provinceAnalysisData = useMemo(() => {
+    const analysis = {};
+    filteredData.forEach(row => {
+      if (!analysis[row.province]) {
+        analysis[row.province] = {
+          province: row.province,
+          region: row.region,
+          districtCount: 0,
+          totalDiscrepancy: 0,
+          constituencyGreater: [], // Districts where Constituency > Party List (positive)
+          partyListGreater: []     // Districts where Party List > Constituency (negative)
+        };
+      }
+      
+      const prov = analysis[row.province];
+      prov.districtCount++;
+      prov.totalDiscrepancy += row.discrepancy;
+      
+      if (row.discrepancy > 0) {
+        // Constituency > Party List - Red
+        prov.constituencyGreater.push({
+          district: row.district,
+          discrepancy: row.discrepancy
+        });
+      } else if (row.discrepancy < 0) {
+        // Party List > Constituency - Blue
+        prov.partyListGreater.push({
+          district: row.district,
+          discrepancy: row.discrepancy
+        });
+      }
+    });
+    
+    return Object.values(analysis).sort((a, b) => a.province.localeCompare(b.province, 'th'));
+  }, [filteredData]);
 
   // --- Render ---
   if (isLoading) {
@@ -268,6 +335,24 @@ function AppContent() {
             </h1>
             <p className="text-slate-500 mt-2">วิเคราะห์ความผิดปกติ ยอดเขย่ง และเปรียบเทียบผู้มาใช้สิทธิ์ (Election 69)</p>
           </div>
+          
+          {/* Region Filter - Affects all pages */}
+          <div className="mt-4 md:mt-0 flex items-center gap-3">
+            <label htmlFor="region-filter" className="text-sm font-medium text-slate-700">ภาค:</label>
+            <select
+              id="region-filter"
+              value={selectedRegion}
+              onChange={(e) => setSelectedRegion(e.target.value)}
+              className="px-4 py-2 bg-white border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            >
+              {REGIONS.map(region => (
+                <option key={region} value={region}>{region}</option>
+              ))}
+            </select>
+            <span className="text-sm text-slate-500">
+              ({kpis?.totalDistricts || 0} เขต)
+            </span>
+          </div>
         </header>
 
         {data.length === 0 ? (
@@ -294,6 +379,10 @@ function AppContent() {
                 topDiscrepancyData={topDiscrepancyData}
                 scatterData={scatterData}
                 sortedTableData={sortedTableData}
+                provinceSummary={provinceSummary}
+                provinceAnalysisData={provinceAnalysisData}
+                selectedRegion={selectedRegion}
+                setSelectedRegion={setSelectedRegion}
               />
             )}
 

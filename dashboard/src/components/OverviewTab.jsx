@@ -1,10 +1,11 @@
 import React from 'react';
-import { MapPin, AlertTriangle, TrendingUp, Users } from 'lucide-react';
+import { MapPin, AlertTriangle, TrendingUp, Users, Database } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, Cell, ScatterChart, Scatter, ZAxis } from 'recharts';
 import KPI_Card from '../components/KPI_Card';
+import ProvinceAnalysis from '../components/ProvinceAnalysis';
 import { getPartyColor } from '../constants/partyColors';
 
-function OverviewTab({ data, kpis, seatDistributionData, topDiscrepancyData, scatterData, sortedTableData }) {
+function OverviewTab({ data, kpis, seatDistributionData, topDiscrepancyData, scatterData, sortedTableData, provinceSummary, provinceAnalysisData, selectedRegion, setSelectedRegion }) {
   if (!kpis) return null;
 
   return (
@@ -183,6 +184,13 @@ function OverviewTab({ data, kpis, seatDistributionData, topDiscrepancyData, sca
           </table>
         </div>
       </div>
+
+      {/* Province Analysis Section */}
+      <ProvinceAnalysis 
+        provinceAnalysisData={provinceAnalysisData} 
+        selectedRegion={selectedRegion}
+        setSelectedRegion={setSelectedRegion}
+      />
     </div>
   );
 }

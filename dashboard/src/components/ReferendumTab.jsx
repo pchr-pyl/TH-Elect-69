@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 function ReferendumTab({ turnoutComparisonData }) {
+  const [showAll, setShowAll] = useState(false);
+  
+  const displayData = showAll 
+    ? turnoutComparisonData 
+    : turnoutComparisonData.slice(0, 20);
+  
+  const hasMore = turnoutComparisonData.length > 20;
+
   return (
     <div className="space-y-6 animate-in fade-in duration-300" role="tabpanel" id="referendum-panel" aria-labelledby="referendum-tab">
       <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
         <h3 className="text-lg font-semibold text-slate-800 mb-1">เปรียบเทียบผู้มาใช้สิทธิ์ (เลือกตั้ง vs ประชามติ)</h3>
-        <p className="text-sm text-slate-500 mb-4">ตารางแสดงเขตเลือกตั้งที่มีส่วนต่างผู้มาใช้สิทธิ์ ส.ส. เขต มากกว่า ประชามติ สูงที่สุด 20 อันดับ</p>
+        <p className="text-sm text-slate-500 mb-4">
+          ตารางแสดงเขตเลือกตั้งที่มีส่วนต่างผู้มาใช้สิทธิ์ ส.ส. เขต มากกว่า ประชามติ 
+          {showAll ? '(แสดงทั้งหมด)' : 'สูงที่สุด 20 อันดับ'}
+          <span className="text-slate-400 ml-2">({turnoutComparisonData.length} เขต)</span>
+        </p>
         
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
@@ -19,7 +32,7 @@ function ReferendumTab({ turnoutComparisonData }) {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {turnoutComparisonData.map((row, idx) => (
+              {displayData.map((row, idx) => (
                 <tr key={idx} className="hover:bg-slate-50/50">
                   <td className="px-6 py-3 text-sm text-slate-800 font-medium">{row.province} เขต {row.district}</td>
                   <td className="px-6 py-3 text-sm text-slate-600 text-right">{row.constituencyVoters.toLocaleString()}</td>
@@ -42,6 +55,28 @@ function ReferendumTab({ turnoutComparisonData }) {
             </tbody>
           </table>
         </div>
+        
+        {/* Toggle Button */}
+        {hasMore && (
+          <div className="mt-4 flex justify-center">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors"
+            >
+              {showAll ? (
+                <>
+                  <ChevronUp className="w-4 h-4" />
+                  แสดงแค่ 20 อันดับแรก
+                </>
+              ) : (
+                <>
+                  <ChevronDown className="w-4 h-4" />
+                  ดูทั้งหมด ({turnoutComparisonData.length} เขต)
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
