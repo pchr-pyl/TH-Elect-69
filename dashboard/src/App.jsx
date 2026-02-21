@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Database, Search } from 'lucide-react';
+import { Database, Search, Info } from 'lucide-react';
+import OcrDataModal from './components/OcrDataModal';
 
 // Components
 import ErrorBoundary from './components/ErrorBoundary';
@@ -28,6 +29,7 @@ function AppContent() {
   const [data, setData] = useState([]);
   const [ocrData, setOcrData] = useState([]);
   const [dataSource, setDataSource] = useState('ocr'); // 'ocr' | 'ect'
+  const [showOcrModal, setShowOcrModal] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -361,6 +363,7 @@ function AppContent() {
   }
 
   return (
+    <>
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans p-6 flex flex-col">
       <div className="max-w-7xl mx-auto space-y-6 flex-grow w-full">
         
@@ -389,6 +392,14 @@ function AppContent() {
                   <span className={`w-2 h-2 rounded-full ${dataSource === 'ocr' ? 'bg-green-500' : 'bg-slate-300'}`}></span>
                   กกต. สส.6/1 ({ocrData.length} เขต)
                 </span>
+              </button>
+              <button
+                onClick={(e) => { e.stopPropagation(); setShowOcrModal(true); }}
+                className="p-1.5 rounded-md text-slate-400 hover:text-green-600 hover:bg-green-50 transition-colors"
+                title="ดูข้อมูลความครอบคลุม"
+                aria-label="ข้อมูลชุดข้อมูล กกต. สส.6/1"
+              >
+                <Info className="w-3.5 h-3.5" />
               </button>
               <button
                 onClick={() => setDataSource('ect')}
@@ -505,6 +516,15 @@ function AppContent() {
         </div>
       </footer>
     </div>
+
+    {/* OCR Data Coverage Modal */}
+    {showOcrModal && (
+      <OcrDataModal
+        onClose={() => setShowOcrModal(false)}
+        displayedCount={ocrData.length}
+      />
+    )}
+    </>
   );
 }
 
