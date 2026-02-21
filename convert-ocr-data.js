@@ -13,7 +13,8 @@ function loadJsonDir(dir) {
   for (const file of files) {
     try {
       const data = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
-      const key = `${data.province_name}_${data.constituency_number}`;
+      // Use filename (e.g. "10_1") as key to avoid English/Thai province_name mismatch
+      const key = file.replace('.json', '');
       map[key] = data;
     } catch (e) {
       console.warn(`Warning: Could not parse ${file}`);
@@ -51,11 +52,19 @@ function main() {
 
     if (!con && !pl) continue;
 
+    // Skip districts that only have one side - discrepancy would be meaningless
+    if (!con || !pl) continue;
+
+    // Skip if either side has no voters data (OCR extraction failure)
+    const conVoters = Number(con?.summary?.voters_came) || 0;
+    const plVoters = Number(pl?.summary?.voters_came) || 0;
+    if (conVoters === 0 || plVoters === 0) continue;
+
     const province = (con || pl).province_name;
     const district = (con || pl).constituency_number;
 
-    const constituencyVoters = con?.summary?.voters_came ?? 0;
-    const partyListVoters = pl?.summary?.voters_came ?? 0;
+    const constituencyVoters = Number(con?.summary?.voters_came) || 0;
+    const partyListVoters = Number(pl?.summary?.voters_came) || 0;
     const discrepancy = constituencyVoters - partyListVoters;
     const absDiscrepancy = Math.abs(discrepancy);
 
@@ -65,26 +74,29 @@ function main() {
     const constituencyMargin = con ? getMargin(con.results) : 0;
     const partyListMargin = pl ? getMargin(pl.results) : 0;
 
-    const invalidVotes = con?.summary?.invalid_votes ?? 0;
-    const eligibleVoters = con?.summary?.eligible_voters ?? 0;
+    const invalidVotes = Number(con?.summary?.invalid_votes) || 0;
+    const eligibleVoters = Number(con?.summary?.eligible_voters) || 0;
     const invalidPercentage = constituencyVoters > 0 ? (invalidVotes / constituencyVoters) * 100 : 0;
     const isCritical = absDiscrepancy > constituencyMargin && constituencyMargin > 0;
 
     results.push({
-      province,
-      district,
+      province: String(province || ''),
+      district: Number(district) || 0,
       constituencyVoters,
       partyListVoters,
       discrepancy,
       absDiscrepancy,
-      winningConstituencyParty,
-      winningPartyListParty,
+      winningConstituencyParty: String(winningConstituencyParty || 'ไม่ทราบ'),
+      winningPartyListParty: String(winningPartyListParty || 'ไม่ทราบ'),
       constituencyMargin,
       partyListMargin,
       invalidVotes,
       eligibleVoters,
       invalidPercentage,
       isCritical,
+      referendumTurnout: 0,
+      turnoutDifference: 0,
+      turnoutDiffPercentage: 0,
       dataSource: 'ocr'
     });
   }

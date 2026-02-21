@@ -32,8 +32,8 @@ function AuditTab({ criticalDistrictsData, invalidBallotsChartData }) {
                 {criticalDistrictsData.map((row, idx) => (
                   <tr key={idx} className="hover:bg-red-50/30">
                     <td className="px-4 py-3 text-sm font-medium text-slate-800">{row.province} เขต {row.district}</td>
-                    <td className="px-4 py-3 text-sm font-bold text-red-600 text-right">{row.absDiscrepancy.toLocaleString()}</td>
-                    <td className="px-4 py-3 text-sm text-slate-600 text-right">{row.marginOfVictory.toLocaleString()}</td>
+                    <td className="px-4 py-3 text-sm font-bold text-red-600 text-right">{(row.absDiscrepancy || 0).toLocaleString()}</td>
+                    <td className="px-4 py-3 text-sm text-slate-600 text-right">{(row.marginOfVictory || row.constituencyMargin || 0).toLocaleString()}</td>
                     <td className="px-4 py-3 text-sm text-red-600 font-medium flex items-center gap-1">
                       <XCircle className="w-4 h-4" /> อาจมีผลพลิกผลเลือกตั้ง
                     </td>

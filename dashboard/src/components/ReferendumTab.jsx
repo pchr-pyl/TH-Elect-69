@@ -35,13 +35,13 @@ function ReferendumTab({ turnoutComparisonData }) {
               {displayData.map((row, idx) => (
                 <tr key={idx} className="hover:bg-slate-50/50">
                   <td className="px-6 py-3 text-sm text-slate-800 font-medium">{row.province} เขต {row.district}</td>
-                  <td className="px-6 py-3 text-sm text-slate-600 text-right">{row.constituencyVoters.toLocaleString()}</td>
-                  <td className="px-6 py-3 text-sm text-slate-600 text-right">{row.referendumTurnout.toLocaleString()}</td>
+                  <td className="px-6 py-3 text-sm text-slate-600 text-right">{(row.constituencyVoters || 0).toLocaleString()}</td>
+                  <td className="px-6 py-3 text-sm text-slate-600 text-right">{(row.referendumTurnout || 0).toLocaleString()}</td>
                   <td className="px-6 py-3 text-sm font-bold text-orange-600 text-right">
-                    {row.turnoutDifference > 0 ? '+' : ''}{row.turnoutDifference.toLocaleString()}
+                    {(row.turnoutDifference || 0) > 0 ? '+' : ''}{(row.turnoutDifference || 0).toLocaleString()}
                   </td>
                   <td className="px-6 py-3 text-sm text-slate-500 text-right">
-                    {row.turnoutDiffPercentage > 0 ? '+' : ''}{row.turnoutDiffPercentage.toFixed(2)}%
+                    {(row.turnoutDiffPercentage || 0) > 0 ? '+' : ''}{(row.turnoutDiffPercentage || 0).toFixed(2)}%
                   </td>
                 </tr>
               ))}

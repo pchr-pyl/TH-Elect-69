@@ -217,15 +217,15 @@ function OverviewTab({ data, kpis, seatDistributionData, topDiscrepancyData, sca
                 <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
                   <td className="px-6 py-3 text-sm text-slate-800 font-medium">{row.province}</td>
                   <td className="px-6 py-3 text-sm text-slate-600">{row.district}</td>
-                  <td className="px-6 py-3 text-sm text-slate-600 text-right">{row.constituencyVoters.toLocaleString()}</td>
-                  <td className="px-6 py-3 text-sm text-slate-600 text-right">{row.partyListVoters.toLocaleString()}</td>
+                  <td className="px-6 py-3 text-sm text-slate-600 text-right">{(row.constituencyVoters || 0).toLocaleString()}</td>
+                  <td className="px-6 py-3 text-sm text-slate-600 text-right">{(row.partyListVoters || 0).toLocaleString()}</td>
                   <td className="px-6 py-3 text-right">
                     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
-                      ${row.absDiscrepancy > 1000 ? 'bg-red-100 text-red-800' : 
-                        row.absDiscrepancy > 100 ? 'bg-orange-100 text-orange-800' : 
-                        row.absDiscrepancy === 0 ? 'bg-green-100 text-green-800' : 'bg-slate-100 text-slate-800'}`}
+                      ${(row.absDiscrepancy || 0) > 1000 ? 'bg-red-100 text-red-800' : 
+                        (row.absDiscrepancy || 0) > 100 ? 'bg-orange-100 text-orange-800' : 
+                        (row.absDiscrepancy || 0) === 0 ? 'bg-green-100 text-green-800' : 'bg-slate-100 text-slate-800'}`}
                     >
-                      {row.discrepancy > 0 ? '+' : ''}{row.discrepancy.toLocaleString()}
+                      {(row.discrepancy || 0) > 0 ? '+' : ''}{(row.discrepancy || 0).toLocaleString()}
                     </span>
                   </td>
                   <td className="px-6 py-3 text-sm">

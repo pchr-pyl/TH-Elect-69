@@ -1,53 +1,22 @@
 [
   {
-    "province": "Bangkok",
-    "district": 7,
-    "constituencyVoters": 0,
-    "partyListVoters": 92497,
-    "discrepancy": -92497,
-    "absDiscrepancy": 92497,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ประชาชน",
-    "constituencyMargin": 0,
-    "partyListMargin": 24256,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "Nakhon Si Thammarat",
-    "district": 2,
-    "constituencyVoters": 0,
-    "partyListVoters": 100576,
-    "discrepancy": -100576,
-    "absDiscrepancy": 100576,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ประชาธิปัตย์",
-    "constituencyMargin": 0,
-    "partyListMargin": 39240,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
     "province": "Sakon Nakhon",
     "district": 2,
     "constituencyVoters": 88996,
-    "partyListVoters": 0,
-    "discrepancy": 88996,
-    "absDiscrepancy": 88996,
+    "partyListVoters": 88996,
+    "discrepancy": 0,
+    "absDiscrepancy": 0,
     "winningConstituencyParty": "กล้าธรรม",
-    "winningPartyListParty": "ไม่ทราบ",
+    "winningPartyListParty": "เพื่อไทย",
     "constituencyMargin": 4928,
-    "partyListMargin": 0,
+    "partyListMargin": 3416,
     "invalidVotes": 3317,
     "eligibleVoters": 131918,
     "invalidPercentage": 3.7271338037664616,
-    "isCritical": true,
+    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -65,6 +34,9 @@
     "eligibleVoters": 128645,
     "invalidPercentage": 2.794798370128604,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -82,6 +54,9 @@
     "eligibleVoters": 117641,
     "invalidPercentage": 3.018022202610432,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -99,6 +74,9 @@
     "eligibleVoters": 124286,
     "invalidPercentage": 3.1021261763680723,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -116,6 +94,9 @@
     "eligibleVoters": 130445,
     "invalidPercentage": 1.3904223438201428,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -133,6 +114,9 @@
     "eligibleVoters": 136434,
     "invalidPercentage": 1.534691342965813,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -150,6 +134,9 @@
     "eligibleVoters": 122576,
     "invalidPercentage": 1.7301878316193346,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -167,6 +154,9 @@
     "eligibleVoters": 129503,
     "invalidPercentage": 1.774605777113372,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -184,6 +174,9 @@
     "eligibleVoters": 133983,
     "invalidPercentage": 1.3349074678182704,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -201,23 +194,29 @@
     "eligibleVoters": 143091,
     "invalidPercentage": 1.3998076751494484,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
     "province": "กรุงเทพมหานคร",
     "district": 7,
     "constituencyVoters": 92497,
-    "partyListVoters": 0,
-    "discrepancy": 92497,
-    "absDiscrepancy": 92497,
+    "partyListVoters": 92497,
+    "discrepancy": 0,
+    "absDiscrepancy": 0,
     "winningConstituencyParty": "ประชาชน",
-    "winningPartyListParty": "ไม่ทราบ",
+    "winningPartyListParty": "ประชาชน",
     "constituencyMargin": 28925,
-    "partyListMargin": 0,
+    "partyListMargin": 24256,
     "invalidVotes": 1649,
     "eligibleVoters": 142711,
     "invalidPercentage": 1.7827605219628746,
-    "isCritical": true,
+    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -235,6 +234,9 @@
     "eligibleVoters": 144013,
     "invalidPercentage": 1.550180153488861,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -252,6 +254,9 @@
     "eligibleVoters": 144197,
     "invalidPercentage": 1.5566588785046729,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -269,6 +274,9 @@
     "eligibleVoters": 137980,
     "invalidPercentage": 1.5262349860019868,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -286,6 +294,9 @@
     "eligibleVoters": 137319,
     "invalidPercentage": 1.202586507517411,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -303,6 +314,9 @@
     "eligibleVoters": 143108,
     "invalidPercentage": 1.4419656125877023,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -320,6 +334,9 @@
     "eligibleVoters": 131666,
     "invalidPercentage": 1.3547622727038582,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -337,6 +354,9 @@
     "eligibleVoters": 140238,
     "invalidPercentage": 1.4422059401550045,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -354,6 +374,9 @@
     "eligibleVoters": 137721,
     "invalidPercentage": 1.4300347066837713,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -371,6 +394,9 @@
     "eligibleVoters": 120676,
     "invalidPercentage": 2.484982611444831,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -388,6 +414,9 @@
     "eligibleVoters": 122821,
     "invalidPercentage": 1.6323014186433866,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -405,6 +434,9 @@
     "eligibleVoters": 135568,
     "invalidPercentage": 1.6518398706025073,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -422,6 +454,9 @@
     "eligibleVoters": 126470,
     "invalidPercentage": 2.022037811764168,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -439,6 +474,9 @@
     "eligibleVoters": 136579,
     "invalidPercentage": 1.4970059880239521,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -456,6 +494,9 @@
     "eligibleVoters": 133612,
     "invalidPercentage": 1.6370353517296672,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -473,6 +514,9 @@
     "eligibleVoters": 144083,
     "invalidPercentage": 1.0679060879604287,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -490,6 +534,9 @@
     "eligibleVoters": 142148,
     "invalidPercentage": 1.9624635004488282,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -507,6 +554,9 @@
     "eligibleVoters": 126830,
     "invalidPercentage": 1.608928830265256,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -524,6 +574,9 @@
     "eligibleVoters": 139434,
     "invalidPercentage": 1.873951050751125,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -541,6 +594,9 @@
     "eligibleVoters": 134453,
     "invalidPercentage": 1.6244962399767335,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -558,6 +614,9 @@
     "eligibleVoters": 139454,
     "invalidPercentage": 2.0128832567908432,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -575,6 +634,9 @@
     "eligibleVoters": 144424,
     "invalidPercentage": 1.8236731239058925,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -592,6 +654,9 @@
     "eligibleVoters": 143753,
     "invalidPercentage": 1.4735485948949192,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -609,6 +674,9 @@
     "eligibleVoters": 143750,
     "invalidPercentage": 1.8531432768928935,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -626,6 +694,9 @@
     "eligibleVoters": 142608,
     "invalidPercentage": 2.3776313127548794,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -643,6 +714,9 @@
     "eligibleVoters": 148164,
     "invalidPercentage": 2.087149705733328,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -660,6 +734,9 @@
     "eligibleVoters": 133198,
     "invalidPercentage": 3.95074769065076,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -677,6 +754,9 @@
     "eligibleVoters": 131663,
     "invalidPercentage": 2.7945939693067015,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -694,6 +774,9 @@
     "eligibleVoters": 136011,
     "invalidPercentage": 3.1625686656487475,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -711,6 +794,9 @@
     "eligibleVoters": 133796,
     "invalidPercentage": 6.04537775591814,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -728,6 +814,9 @@
     "eligibleVoters": 122645,
     "invalidPercentage": 4.689394960247945,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -745,6 +834,9 @@
     "eligibleVoters": 131445,
     "invalidPercentage": 3.1152578852191666,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -762,6 +854,9 @@
     "eligibleVoters": 126190,
     "invalidPercentage": 3.4442498540572095,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -779,6 +874,9 @@
     "eligibleVoters": 124253,
     "invalidPercentage": 3.054157316999212,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -796,6 +894,9 @@
     "eligibleVoters": 136385,
     "invalidPercentage": 2.7901092071384177,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -813,6 +914,9 @@
     "eligibleVoters": 137299,
     "invalidPercentage": 2.4546606604687815,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -830,6 +934,9 @@
     "eligibleVoters": 135642,
     "invalidPercentage": 2.59153341961341,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -847,6 +954,9 @@
     "eligibleVoters": 144685,
     "invalidPercentage": 5.172413793103448,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -864,6 +974,9 @@
     "eligibleVoters": 147930,
     "invalidPercentage": 4.511920699575583,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -881,6 +994,9 @@
     "eligibleVoters": 137857,
     "invalidPercentage": 4.616058234360462,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -898,6 +1014,9 @@
     "eligibleVoters": 138876,
     "invalidPercentage": 4.746848963896603,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -915,6 +1034,9 @@
     "eligibleVoters": 128250,
     "invalidPercentage": 2.875574621216277,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -932,6 +1054,9 @@
     "eligibleVoters": 138811,
     "invalidPercentage": 2.6435768381342357,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -949,6 +1074,9 @@
     "eligibleVoters": 132197,
     "invalidPercentage": 4.3827031082766,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -966,6 +1094,9 @@
     "eligibleVoters": 130877,
     "invalidPercentage": 2.903016881163296,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -983,6 +1114,9 @@
     "eligibleVoters": 131801,
     "invalidPercentage": 3.028950613659052,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1000,6 +1134,9 @@
     "eligibleVoters": 129906,
     "invalidPercentage": 4.413027833878868,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1017,6 +1154,9 @@
     "eligibleVoters": 132364,
     "invalidPercentage": 4.889913238113178,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1034,6 +1174,9 @@
     "eligibleVoters": 139634,
     "invalidPercentage": 3.7572733108317977,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1051,6 +1194,9 @@
     "eligibleVoters": 127326,
     "invalidPercentage": 2.977086666039334,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1068,6 +1214,9 @@
     "eligibleVoters": 135110,
     "invalidPercentage": 4.448833920675181,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1085,6 +1234,9 @@
     "eligibleVoters": 131498,
     "invalidPercentage": 4.999878878903127,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1102,6 +1254,9 @@
     "eligibleVoters": 148036,
     "invalidPercentage": 2.9258759985886313,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1119,6 +1274,9 @@
     "eligibleVoters": 142477,
     "invalidPercentage": 4.873639191290825,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1136,6 +1294,9 @@
     "eligibleVoters": 142294,
     "invalidPercentage": 4.206889040702568,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1153,6 +1314,9 @@
     "eligibleVoters": 146676,
     "invalidPercentage": 4.543884525887144,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1170,6 +1334,9 @@
     "eligibleVoters": 142226,
     "invalidPercentage": 3.7420476214583434,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1187,6 +1354,9 @@
     "eligibleVoters": 145910,
     "invalidPercentage": 5.217017208413002,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1204,6 +1374,9 @@
     "eligibleVoters": 154572,
     "invalidPercentage": 3.67181047242871,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1221,6 +1394,9 @@
     "eligibleVoters": 137328,
     "invalidPercentage": 2.143829183677381,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1238,6 +1414,9 @@
     "eligibleVoters": 113941,
     "invalidPercentage": 2.247445003628749,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1255,6 +1434,9 @@
     "eligibleVoters": 127143,
     "invalidPercentage": 3.341148291365994,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1272,6 +1454,9 @@
     "eligibleVoters": 140456,
     "invalidPercentage": 3.2362047758408616,
     "isCritical": true,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1289,6 +1474,9 @@
     "eligibleVoters": 134987,
     "invalidPercentage": 3.498783408188192,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1306,6 +1494,9 @@
     "eligibleVoters": 138584,
     "invalidPercentage": 2.2932311357398105,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1323,23 +1514,9 @@
     "eligibleVoters": 127875,
     "invalidPercentage": 2.362364392172767,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "ชลบุรี",
-    "district": 8,
-    "constituencyVoters": 0,
-    "partyListVoters": 94307,
-    "discrepancy": -94307,
-    "absDiscrepancy": 94307,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ประชาชน",
-    "constituencyMargin": 0,
-    "partyListMargin": 17471,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1357,6 +1534,9 @@
     "eligibleVoters": 122755,
     "invalidPercentage": 4.528765539173171,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1374,6 +1554,9 @@
     "eligibleVoters": 134698,
     "invalidPercentage": 2.23347063378938,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1391,6 +1574,9 @@
     "eligibleVoters": 132320,
     "invalidPercentage": 6.05277921857964,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1408,6 +1594,9 @@
     "eligibleVoters": 130196,
     "invalidPercentage": 5.207248708968332,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1425,6 +1614,9 @@
     "eligibleVoters": 129541,
     "invalidPercentage": 3.2598533403922185,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1442,6 +1634,9 @@
     "eligibleVoters": 133561,
     "invalidPercentage": 5.123026074182886,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1459,6 +1654,9 @@
     "eligibleVoters": 127154,
     "invalidPercentage": 4.633998340577826,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1476,6 +1674,9 @@
     "eligibleVoters": 121184,
     "invalidPercentage": 3.5746482185552466,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1493,6 +1694,9 @@
     "eligibleVoters": 132089,
     "invalidPercentage": 2.9625738967178123,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1510,6 +1714,9 @@
     "eligibleVoters": 134526,
     "invalidPercentage": 4.315434512272997,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1527,6 +1734,9 @@
     "eligibleVoters": 126889,
     "invalidPercentage": 2.4748619175754145,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1544,6 +1754,9 @@
     "eligibleVoters": 137061,
     "invalidPercentage": 2.380769526150065,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1561,6 +1774,9 @@
     "eligibleVoters": 136820,
     "invalidPercentage": 2.5634126881042065,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1578,6 +1794,9 @@
     "eligibleVoters": 135755,
     "invalidPercentage": 2.599543870388105,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1595,6 +1814,9 @@
     "eligibleVoters": 124216,
     "invalidPercentage": 2.1817742276660255,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1612,6 +1834,9 @@
     "eligibleVoters": 131993,
     "invalidPercentage": 2.232345791252446,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1629,6 +1854,9 @@
     "eligibleVoters": 125344,
     "invalidPercentage": 2.6271853835249646,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1646,6 +1874,9 @@
     "eligibleVoters": 128358,
     "invalidPercentage": 2.130289297305988,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1663,6 +1894,9 @@
     "eligibleVoters": 176946,
     "invalidPercentage": 3.6433334664377273,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1680,6 +1914,9 @@
     "eligibleVoters": 150581,
     "invalidPercentage": 3.6257820733131427,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1697,6 +1934,9 @@
     "eligibleVoters": 136061,
     "invalidPercentage": 10.968089161976096,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1714,6 +1954,9 @@
     "eligibleVoters": 134495,
     "invalidPercentage": 7.840475795755967,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1731,6 +1974,9 @@
     "eligibleVoters": 104054,
     "invalidPercentage": 3.2524447663889893,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1748,6 +1994,9 @@
     "eligibleVoters": 108945,
     "invalidPercentage": 3.736644659574225,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1765,6 +2014,9 @@
     "eligibleVoters": 129731,
     "invalidPercentage": 3.5059661757100993,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1782,6 +2034,9 @@
     "eligibleVoters": 120935,
     "invalidPercentage": 2.637638468240468,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1799,6 +2054,9 @@
     "eligibleVoters": 119354,
     "invalidPercentage": 3.436753653673393,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1816,6 +2074,9 @@
     "eligibleVoters": 128771,
     "invalidPercentage": 3.496723011215007,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1833,6 +2094,9 @@
     "eligibleVoters": 131064,
     "invalidPercentage": 2.7302067009924635,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1850,6 +2114,9 @@
     "eligibleVoters": 126887,
     "invalidPercentage": 2.4556322405718514,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1867,23 +2134,9 @@
     "eligibleVoters": 143576,
     "invalidPercentage": 2.67616930121118,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "นครพนม",
-    "district": 2,
-    "constituencyVoters": 94215,
-    "partyListVoters": 0,
-    "discrepancy": 94215,
-    "absDiscrepancy": 94215,
-    "winningConstituencyParty": "เพื่อไทย",
-    "winningPartyListParty": "ไม่ทราบ",
-    "constituencyMargin": 34209,
-    "partyListMargin": 0,
-    "invalidVotes": 4001,
-    "eligibleVoters": 143097,
-    "invalidPercentage": 4.246669850873004,
-    "isCritical": true,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1901,6 +2154,9 @@
     "eligibleVoters": 142454,
     "invalidPercentage": 3.17117768375396,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1918,6 +2174,9 @@
     "eligibleVoters": 144802,
     "invalidPercentage": 2.441407264979473,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1935,6 +2194,9 @@
     "eligibleVoters": 128270,
     "invalidPercentage": 2.5674437094868425,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1952,6 +2214,9 @@
     "eligibleVoters": 141226,
     "invalidPercentage": 3.0203117619272555,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1969,6 +2234,9 @@
     "eligibleVoters": 136554,
     "invalidPercentage": 3.536525894860041,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -1986,6 +2254,9 @@
     "eligibleVoters": 131759,
     "invalidPercentage": 4.288146414130666,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2003,6 +2274,9 @@
     "eligibleVoters": 133508,
     "invalidPercentage": 4.069211281522985,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2020,6 +2294,9 @@
     "eligibleVoters": 133507,
     "invalidPercentage": 2.4602971012802874,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2037,6 +2314,9 @@
     "eligibleVoters": 136725,
     "invalidPercentage": 3.313697510763114,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2054,6 +2334,9 @@
     "eligibleVoters": 133816,
     "invalidPercentage": 5.810078661619024,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2071,6 +2354,9 @@
     "eligibleVoters": 135762,
     "invalidPercentage": 3.1453749256636208,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2088,6 +2374,9 @@
     "eligibleVoters": 138131,
     "invalidPercentage": 3.7150431576974228,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2105,6 +2394,9 @@
     "eligibleVoters": 132159,
     "invalidPercentage": 4.337514155680434,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2122,6 +2414,9 @@
     "eligibleVoters": 132388,
     "invalidPercentage": 4.867275295705159,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2139,6 +2434,9 @@
     "eligibleVoters": 130106,
     "invalidPercentage": 8.448209963052618,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2156,6 +2454,9 @@
     "eligibleVoters": 130744,
     "invalidPercentage": 5.8341507763715095,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2173,6 +2474,9 @@
     "eligibleVoters": 138615,
     "invalidPercentage": 2.8389177064348803,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2190,6 +2494,9 @@
     "eligibleVoters": 136002,
     "invalidPercentage": 3.350010633177753,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2207,23 +2514,29 @@
     "eligibleVoters": 132977,
     "invalidPercentage": 3.0421146504473993,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
     "province": "นครศรีธรรมราช",
     "district": 2,
     "constituencyVoters": 100576,
-    "partyListVoters": 0,
-    "discrepancy": 100576,
-    "absDiscrepancy": 100576,
+    "partyListVoters": 100576,
+    "discrepancy": 0,
+    "absDiscrepancy": 0,
     "winningConstituencyParty": "ภูมิใจไทย",
-    "winningPartyListParty": "ไม่ทราบ",
+    "winningPartyListParty": "ประชาธิปัตย์",
     "constituencyMargin": 24223,
-    "partyListMargin": 0,
+    "partyListMargin": 39240,
     "invalidVotes": 2927,
     "eligibleVoters": 141832,
     "invalidPercentage": 2.9102370346802418,
-    "isCritical": true,
+    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2241,6 +2554,9 @@
     "eligibleVoters": 133600,
     "invalidPercentage": 2.7431853126559207,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2258,6 +2574,9 @@
     "eligibleVoters": 135858,
     "invalidPercentage": 2.3099590934646477,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2275,6 +2594,9 @@
     "eligibleVoters": 140274,
     "invalidPercentage": 1.9432940426887546,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2292,6 +2614,9 @@
     "eligibleVoters": 134535,
     "invalidPercentage": 1.9109371875803365,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2309,6 +2634,9 @@
     "eligibleVoters": 136273,
     "invalidPercentage": 5.143422354104846,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2326,6 +2654,9 @@
     "eligibleVoters": 136225,
     "invalidPercentage": 2.7219598110639662,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2343,6 +2674,9 @@
     "eligibleVoters": 139759,
     "invalidPercentage": 2.6376618542968524,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2360,6 +2694,9 @@
     "eligibleVoters": 138722,
     "invalidPercentage": 3.519215440961327,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2377,6 +2714,9 @@
     "eligibleVoters": 137003,
     "invalidPercentage": 3.7327830301866873,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2394,6 +2734,9 @@
     "eligibleVoters": 146592,
     "invalidPercentage": 4.83964489942816,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2411,6 +2754,9 @@
     "eligibleVoters": 139645,
     "invalidPercentage": 5.762176317184812,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2428,6 +2774,9 @@
     "eligibleVoters": 139526,
     "invalidPercentage": 4.514244127791079,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2445,6 +2794,9 @@
     "eligibleVoters": 136823,
     "invalidPercentage": 3.809006933522362,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2462,6 +2814,9 @@
     "eligibleVoters": 135257,
     "invalidPercentage": 1.7052339155362473,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2479,6 +2834,9 @@
     "eligibleVoters": 124496,
     "invalidPercentage": 2.039411313258995,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2496,6 +2854,9 @@
     "eligibleVoters": 140970,
     "invalidPercentage": 2.262595991758756,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2513,6 +2874,9 @@
     "eligibleVoters": 127371,
     "invalidPercentage": 2.3716012084592144,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2530,6 +2894,9 @@
     "eligibleVoters": 137863,
     "invalidPercentage": 2.134166738347144,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2547,6 +2914,9 @@
     "eligibleVoters": 144044,
     "invalidPercentage": 3.2784054243203693,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2564,6 +2934,9 @@
     "eligibleVoters": 142327,
     "invalidPercentage": 2.6008343577284565,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2581,6 +2954,9 @@
     "eligibleVoters": 121283,
     "invalidPercentage": 2.13762447025666,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2598,6 +2974,9 @@
     "eligibleVoters": 129176,
     "invalidPercentage": 2.8362379143299363,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2615,6 +2994,9 @@
     "eligibleVoters": 113207,
     "invalidPercentage": 4.437604206746185,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2632,6 +3014,9 @@
     "eligibleVoters": 112278,
     "invalidPercentage": 2.914003135930527,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2649,6 +3034,9 @@
     "eligibleVoters": 116934,
     "invalidPercentage": 2.705658856715215,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2666,23 +3054,9 @@
     "eligibleVoters": 125332,
     "invalidPercentage": 3.334294840977319,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "น่าน",
-    "district": 1,
-    "constituencyVoters": 0,
-    "partyListVoters": 107201,
-    "discrepancy": -107201,
-    "absDiscrepancy": 107201,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ประชาชน",
-    "constituencyMargin": 0,
-    "partyListMargin": 19631,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2700,23 +3074,9 @@
     "eligibleVoters": 129540,
     "invalidPercentage": 3.5744361359969967,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "น่าน",
-    "district": 3,
-    "constituencyVoters": 89542,
-    "partyListVoters": 0,
-    "discrepancy": 89542,
-    "absDiscrepancy": 89542,
-    "winningConstituencyParty": "ประชาชน",
-    "winningPartyListParty": "ประชาชน",
-    "constituencyMargin": 10019,
-    "partyListMargin": 10061,
-    "invalidVotes": 5479,
-    "eligibleVoters": 119751,
-    "invalidPercentage": 6.118916262759376,
-    "isCritical": true,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2734,6 +3094,9 @@
     "eligibleVoters": 104720,
     "invalidPercentage": 3.9450468044986198,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2751,6 +3114,9 @@
     "eligibleVoters": 109327,
     "invalidPercentage": 2.4918338777414837,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2768,6 +3134,9 @@
     "eligibleVoters": 118401,
     "invalidPercentage": 4.908096193962294,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2785,6 +3154,9 @@
     "eligibleVoters": 130705,
     "invalidPercentage": 2.8079816048949686,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2802,6 +3174,9 @@
     "eligibleVoters": 128907,
     "invalidPercentage": 1.9715597401081586,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2819,6 +3194,9 @@
     "eligibleVoters": 131718,
     "invalidPercentage": 3.1364939924732673,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2836,6 +3214,9 @@
     "eligibleVoters": 132041,
     "invalidPercentage": 2.567395393047101,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2853,6 +3234,9 @@
     "eligibleVoters": 122733,
     "invalidPercentage": 1.913229732594072,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2870,6 +3254,9 @@
     "eligibleVoters": 122395,
     "invalidPercentage": 1.9478530962224117,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2887,6 +3274,9 @@
     "eligibleVoters": 121843,
     "invalidPercentage": 2.3811849488273156,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2904,6 +3294,9 @@
     "eligibleVoters": 122404,
     "invalidPercentage": 3.8025479768287287,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2921,6 +3314,9 @@
     "eligibleVoters": 152841,
     "invalidPercentage": 2.87832423202421,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2938,6 +3334,9 @@
     "eligibleVoters": 146320,
     "invalidPercentage": 2.615748563703954,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2955,6 +3354,9 @@
     "eligibleVoters": 138338,
     "invalidPercentage": 2.5536646683426802,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2972,6 +3374,9 @@
     "eligibleVoters": 129363,
     "invalidPercentage": 3.888789275506007,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -2989,6 +3394,9 @@
     "eligibleVoters": 132022,
     "invalidPercentage": 5.00165158925508,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3006,6 +3414,9 @@
     "eligibleVoters": 95574,
     "invalidPercentage": 2.87542949538503,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3023,6 +3434,9 @@
     "eligibleVoters": 110666,
     "invalidPercentage": 3.5097834754339687,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3040,6 +3454,9 @@
     "eligibleVoters": 99188,
     "invalidPercentage": 3.7497150672441304,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3057,6 +3474,9 @@
     "eligibleVoters": 110256,
     "invalidPercentage": 2.6508553840280595,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3074,6 +3494,9 @@
     "eligibleVoters": 109944,
     "invalidPercentage": 4.17632524135823,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3091,6 +3514,9 @@
     "eligibleVoters": 140191,
     "invalidPercentage": 3.3670033670033668,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3108,6 +3534,9 @@
     "eligibleVoters": 128589,
     "invalidPercentage": 3.484385045490853,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3125,6 +3554,9 @@
     "eligibleVoters": 136428,
     "invalidPercentage": 3.4088591400441284,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3142,6 +3574,9 @@
     "eligibleVoters": 139523,
     "invalidPercentage": 2.7189407587497594,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3159,6 +3594,9 @@
     "eligibleVoters": 133055,
     "invalidPercentage": 4.231615321430931,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3176,6 +3614,9 @@
     "eligibleVoters": 124913,
     "invalidPercentage": 3.168883863946154,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3193,6 +3634,9 @@
     "eligibleVoters": 127935,
     "invalidPercentage": 4.266019700535205,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3210,6 +3654,9 @@
     "eligibleVoters": 130337,
     "invalidPercentage": 4.818402926809328,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3227,6 +3674,9 @@
     "eligibleVoters": 100343,
     "invalidPercentage": 3.9230707201032176,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3244,6 +3694,9 @@
     "eligibleVoters": 110773,
     "invalidPercentage": 3.4238744539251202,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3261,6 +3714,9 @@
     "eligibleVoters": 134471,
     "invalidPercentage": 1.7573133568110164,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3278,6 +3734,9 @@
     "eligibleVoters": 144343,
     "invalidPercentage": 1.9857483738110027,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3295,6 +3754,9 @@
     "eligibleVoters": 143511,
     "invalidPercentage": 2.806424489935995,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3312,6 +3774,9 @@
     "eligibleVoters": 145512,
     "invalidPercentage": 5.04016661707825,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3329,6 +3794,9 @@
     "eligibleVoters": 140325,
     "invalidPercentage": 4.766191987175969,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3346,6 +3814,9 @@
     "eligibleVoters": 141664,
     "invalidPercentage": 3.717767748861806,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3363,6 +3834,9 @@
     "eligibleVoters": 139505,
     "invalidPercentage": 3.1638315840270237,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3380,6 +3854,9 @@
     "eligibleVoters": 147554,
     "invalidPercentage": 4.991166513684502,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3397,6 +3874,9 @@
     "eligibleVoters": 142882,
     "invalidPercentage": 4.458699361688681,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3414,6 +3894,9 @@
     "eligibleVoters": 128190,
     "invalidPercentage": 3.539982220717098,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3431,6 +3914,9 @@
     "eligibleVoters": 132621,
     "invalidPercentage": 4.619355384664205,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3448,6 +3934,9 @@
     "eligibleVoters": 103958,
     "invalidPercentage": 2.6286545294900465,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3465,6 +3954,9 @@
     "eligibleVoters": 107981,
     "invalidPercentage": 4.191191817992069,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3482,6 +3974,9 @@
     "eligibleVoters": 117627,
     "invalidPercentage": 2.5808571219975174,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3499,6 +3994,9 @@
     "eligibleVoters": 129888,
     "invalidPercentage": 2.3252989433470614,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3516,6 +4014,9 @@
     "eligibleVoters": 128380,
     "invalidPercentage": 2.6309746812496226,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3533,6 +4034,9 @@
     "eligibleVoters": 130076,
     "invalidPercentage": 2.308499475341028,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3550,6 +4054,9 @@
     "eligibleVoters": 125931,
     "invalidPercentage": 3.483430455000294,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3567,23 +4074,9 @@
     "eligibleVoters": 128307,
     "invalidPercentage": 2.6891984770299904,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "มหาสารคาม",
-    "district": 6,
-    "constituencyVoters": 0,
-    "partyListVoters": 91663,
-    "discrepancy": -91663,
-    "absDiscrepancy": 91663,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "เพื่อไทย",
-    "constituencyMargin": 0,
-    "partyListMargin": 11251,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3601,6 +4094,9 @@
     "eligibleVoters": 141889,
     "invalidPercentage": 2.9960688523338805,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3618,6 +4114,9 @@
     "eligibleVoters": 138474,
     "invalidPercentage": 3.923317870028944,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3635,6 +4134,9 @@
     "eligibleVoters": 130009,
     "invalidPercentage": 3.1086774229397562,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3652,6 +4154,9 @@
     "eligibleVoters": 134281,
     "invalidPercentage": 5.40190728641395,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3669,6 +4174,9 @@
     "eligibleVoters": 131474,
     "invalidPercentage": 4.376092714538469,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3686,6 +4194,9 @@
     "eligibleVoters": 144704,
     "invalidPercentage": 2.7370053718695617,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3703,6 +4214,9 @@
     "eligibleVoters": 141191,
     "invalidPercentage": 2.083621101843489,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3720,6 +4234,9 @@
     "eligibleVoters": 146753,
     "invalidPercentage": 3.6667670985236516,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3737,6 +4254,9 @@
     "eligibleVoters": 143308,
     "invalidPercentage": 4.965783652997436,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3754,6 +4274,9 @@
     "eligibleVoters": 121750,
     "invalidPercentage": 2.6109974732282515,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3771,6 +4294,9 @@
     "eligibleVoters": 116650,
     "invalidPercentage": 4.710513114058219,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3788,6 +4314,9 @@
     "eligibleVoters": 124375,
     "invalidPercentage": 4.174724283018646,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3805,6 +4334,9 @@
     "eligibleVoters": 129478,
     "invalidPercentage": 3.615767915206283,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3822,6 +4354,9 @@
     "eligibleVoters": 129572,
     "invalidPercentage": 3.8616592403988967,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3839,6 +4374,9 @@
     "eligibleVoters": 140141,
     "invalidPercentage": 3.222087890460258,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3856,6 +4394,9 @@
     "eligibleVoters": 139159,
     "invalidPercentage": 5.015624537917845,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3873,6 +4414,9 @@
     "eligibleVoters": 143882,
     "invalidPercentage": 5.181257214271456,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3890,6 +4434,9 @@
     "eligibleVoters": 140230,
     "invalidPercentage": 2.4838835364125815,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3907,6 +4454,9 @@
     "eligibleVoters": 133773,
     "invalidPercentage": 2.7369907924107144,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3924,6 +4474,9 @@
     "eligibleVoters": 126135,
     "invalidPercentage": 2.8411013364912874,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3941,6 +4494,9 @@
     "eligibleVoters": 136681,
     "invalidPercentage": 3.2486214337089425,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3958,6 +4514,9 @@
     "eligibleVoters": 132880,
     "invalidPercentage": 2.5634141501394936,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3975,6 +4534,9 @@
     "eligibleVoters": 129528,
     "invalidPercentage": 2.342363798749628,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -3992,6 +4554,9 @@
     "eligibleVoters": 133199,
     "invalidPercentage": 5.850717894842163,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4009,6 +4574,9 @@
     "eligibleVoters": 130130,
     "invalidPercentage": 3.7979355568952156,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4026,6 +4594,9 @@
     "eligibleVoters": 134383,
     "invalidPercentage": 3.2500412142907606,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4043,6 +4614,9 @@
     "eligibleVoters": 131264,
     "invalidPercentage": 2.41578386861723,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4060,6 +4634,9 @@
     "eligibleVoters": 151712,
     "invalidPercentage": 3.4744202497664674,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4077,6 +4654,9 @@
     "eligibleVoters": 149672,
     "invalidPercentage": 3.4724150406811893,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4094,6 +4674,9 @@
     "eligibleVoters": 145648,
     "invalidPercentage": 3.6675162843387143,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4111,6 +4694,9 @@
     "eligibleVoters": 149394,
     "invalidPercentage": 4.160247859202204,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4128,6 +4714,9 @@
     "eligibleVoters": 146327,
     "invalidPercentage": 4.161462979482605,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4145,6 +4734,9 @@
     "eligibleVoters": 150942,
     "invalidPercentage": 7.022665603983272,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4162,6 +4754,9 @@
     "eligibleVoters": 147051,
     "invalidPercentage": 4.008143754979198,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4179,6 +4774,9 @@
     "eligibleVoters": 157730,
     "invalidPercentage": 5.728356661482634,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4196,6 +4794,9 @@
     "eligibleVoters": 170916,
     "invalidPercentage": 4.099788787984384,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4213,6 +4814,9 @@
     "eligibleVoters": 162313,
     "invalidPercentage": 5.7473097456693925,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4230,6 +4834,9 @@
     "eligibleVoters": 132927,
     "invalidPercentage": 2.394451756606257,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4247,6 +4854,9 @@
     "eligibleVoters": 128729,
     "invalidPercentage": 2.921467199623795,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4264,6 +4874,9 @@
     "eligibleVoters": 128022,
     "invalidPercentage": 3.887352091736635,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4281,6 +4894,9 @@
     "eligibleVoters": 133124,
     "invalidPercentage": 3.47606150815856,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4298,6 +4914,9 @@
     "eligibleVoters": 127679,
     "invalidPercentage": 4.04763584209165,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4315,6 +4934,9 @@
     "eligibleVoters": 128551,
     "invalidPercentage": 4.065021272538762,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4332,23 +4954,9 @@
     "eligibleVoters": 126857,
     "invalidPercentage": 5.1672743251428095,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "ศรีสะเกษ",
-    "district": 8,
-    "constituencyVoters": 0,
-    "partyListVoters": 89354,
-    "discrepancy": -89354,
-    "absDiscrepancy": 89354,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ภูมิใจไทย",
-    "constituencyMargin": 0,
-    "partyListMargin": 11453,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4366,6 +4974,9 @@
     "eligibleVoters": 139255,
     "invalidPercentage": 2.9644523773682288,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4383,23 +4994,9 @@
     "eligibleVoters": 133562,
     "invalidPercentage": 2.428219340481068,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "สกลนคร",
-    "district": 2,
-    "constituencyVoters": 0,
-    "partyListVoters": 88996,
-    "discrepancy": -88996,
-    "absDiscrepancy": 88996,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "เพื่อไทย",
-    "constituencyMargin": 0,
-    "partyListMargin": 3416,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4417,6 +5014,9 @@
     "eligibleVoters": 133998,
     "invalidPercentage": 4.771302530763872,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4434,6 +5034,9 @@
     "eligibleVoters": 132760,
     "invalidPercentage": 4.12111320460355,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4451,6 +5054,9 @@
     "eligibleVoters": 129748,
     "invalidPercentage": 2.6730350259762026,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4468,6 +5074,9 @@
     "eligibleVoters": 130058,
     "invalidPercentage": 3.960949435480866,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4485,6 +5094,9 @@
     "eligibleVoters": 131938,
     "invalidPercentage": 3.675302335963864,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4502,6 +5114,9 @@
     "eligibleVoters": 128135,
     "invalidPercentage": 3.006854312462106,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4519,6 +5134,9 @@
     "eligibleVoters": 108624,
     "invalidPercentage": 1.7049505189767882,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4536,6 +5154,9 @@
     "eligibleVoters": 133682,
     "invalidPercentage": 3.20252125421074,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4553,6 +5174,9 @@
     "eligibleVoters": 126618,
     "invalidPercentage": 2.602523659305994,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4570,23 +5194,9 @@
     "eligibleVoters": 115747,
     "invalidPercentage": 2.5065541275017584,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "สงขลา",
-    "district": 6,
-    "constituencyVoters": 0,
-    "partyListVoters": 93834,
-    "discrepancy": -93834,
-    "absDiscrepancy": 93834,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ประชาธิปัตย์",
-    "constituencyMargin": 0,
-    "partyListMargin": 23527,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4604,6 +5214,9 @@
     "eligibleVoters": 126580,
     "invalidPercentage": 2.8309430066497305,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4621,6 +5234,9 @@
     "eligibleVoters": 120456,
     "invalidPercentage": 2.564051261017017,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4638,6 +5254,9 @@
     "eligibleVoters": 135934,
     "invalidPercentage": 2.870076957899502,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4655,6 +5274,9 @@
     "eligibleVoters": 116489,
     "invalidPercentage": 2.843253631790176,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4672,6 +5294,9 @@
     "eligibleVoters": 129527,
     "invalidPercentage": 3.1796214256947244,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4689,6 +5314,9 @@
     "eligibleVoters": 130785,
     "invalidPercentage": 4.3872748432012685,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4706,6 +5334,9 @@
     "eligibleVoters": 129095,
     "invalidPercentage": 2.625650183245258,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4723,6 +5354,9 @@
     "eligibleVoters": 141094,
     "invalidPercentage": 2.4710688954332407,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4740,6 +5374,9 @@
     "eligibleVoters": 150398,
     "invalidPercentage": 3.0708302416434976,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4757,23 +5394,9 @@
     "eligibleVoters": 129990,
     "invalidPercentage": 2.961362619616572,
     "isCritical": true,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "สมุทรปราการ",
-    "district": 6,
-    "constituencyVoters": 0,
-    "partyListVoters": 91647,
-    "discrepancy": -91647,
-    "absDiscrepancy": 91647,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ประชาชน",
-    "constituencyMargin": 0,
-    "partyListMargin": 13321,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4791,23 +5414,9 @@
     "eligibleVoters": 149502,
     "invalidPercentage": 2.6066283376114114,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "สมุทรปราการ",
-    "district": 8,
-    "constituencyVoters": 0,
-    "partyListVoters": 111858,
-    "discrepancy": -111858,
-    "absDiscrepancy": 111858,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ประชาชน",
-    "constituencyMargin": 0,
-    "partyListMargin": 32181,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4825,6 +5434,9 @@
     "eligibleVoters": 156144,
     "invalidPercentage": 3.997919036408045,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4842,6 +5454,9 @@
     "eligibleVoters": 119400,
     "invalidPercentage": 2.7519705608431955,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4859,6 +5474,9 @@
     "eligibleVoters": 119053,
     "invalidPercentage": 3.713524752937878,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4876,6 +5494,9 @@
     "eligibleVoters": 111970,
     "invalidPercentage": 3.930621717356785,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4893,6 +5514,9 @@
     "eligibleVoters": 112307,
     "invalidPercentage": 3.0936947554507954,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4910,6 +5534,9 @@
     "eligibleVoters": 128124,
     "invalidPercentage": 3.760513591483483,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4927,6 +5554,9 @@
     "eligibleVoters": 136691,
     "invalidPercentage": 4.2786254231785925,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4944,6 +5574,9 @@
     "eligibleVoters": 125851,
     "invalidPercentage": 3.6184376164435985,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4961,6 +5594,9 @@
     "eligibleVoters": 128318,
     "invalidPercentage": 4.331467009990319,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4978,6 +5614,9 @@
     "eligibleVoters": 147502,
     "invalidPercentage": 3.8571897032300377,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -4995,6 +5634,9 @@
     "eligibleVoters": 145146,
     "invalidPercentage": 3.974800952146434,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5012,6 +5654,9 @@
     "eligibleVoters": 151072,
     "invalidPercentage": 5.124733904274208,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5029,6 +5674,9 @@
     "eligibleVoters": 167134,
     "invalidPercentage": 4.280922794146525,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5046,6 +5694,9 @@
     "eligibleVoters": 135381,
     "invalidPercentage": 3.004605956516648,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5063,6 +5714,9 @@
     "eligibleVoters": 129576,
     "invalidPercentage": 3.8655572299023784,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5080,6 +5734,9 @@
     "eligibleVoters": 130523,
     "invalidPercentage": 3.199340651107032,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5097,6 +5754,9 @@
     "eligibleVoters": 137556,
     "invalidPercentage": 4.750767871840684,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5114,6 +5774,9 @@
     "eligibleVoters": 144799,
     "invalidPercentage": 4.2290343367393906,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5131,6 +5794,9 @@
     "eligibleVoters": 117091,
     "invalidPercentage": 2.0194609157936516,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5148,6 +5814,9 @@
     "eligibleVoters": 118867,
     "invalidPercentage": 2.4379248162019698,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5165,6 +5834,9 @@
     "eligibleVoters": 120055,
     "invalidPercentage": 2.3543898011825024,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5182,6 +5854,9 @@
     "eligibleVoters": 123380,
     "invalidPercentage": 1.909119436374495,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5199,6 +5874,9 @@
     "eligibleVoters": 121937,
     "invalidPercentage": 2.289357696093115,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5216,6 +5894,9 @@
     "eligibleVoters": 125056,
     "invalidPercentage": 2.2069613194811293,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5233,6 +5914,9 @@
     "eligibleVoters": 120275,
     "invalidPercentage": 2.048904663845111,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5250,6 +5934,9 @@
     "eligibleVoters": 136098,
     "invalidPercentage": 3.7252817350627256,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5267,6 +5954,9 @@
     "eligibleVoters": 140119,
     "invalidPercentage": 3.2220035156784523,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5284,6 +5974,9 @@
     "eligibleVoters": 137349,
     "invalidPercentage": 3.2768294843777683,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5301,6 +5994,9 @@
     "eligibleVoters": 139651,
     "invalidPercentage": 2.8230592936475287,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5318,23 +6014,9 @@
     "eligibleVoters": 133978,
     "invalidPercentage": 3.887103500723695,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "สุรินทร์",
-    "district": 6,
-    "constituencyVoters": 0,
-    "partyListVoters": 81526,
-    "discrepancy": -81526,
-    "absDiscrepancy": 81526,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ภูมิใจไทย",
-    "constituencyMargin": 0,
-    "partyListMargin": 10362,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5352,6 +6034,9 @@
     "eligibleVoters": 136450,
     "invalidPercentage": 4.704775861503297,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5369,6 +6054,9 @@
     "eligibleVoters": 136843,
     "invalidPercentage": 5.068043172219616,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5386,6 +6074,9 @@
     "eligibleVoters": 118249,
     "invalidPercentage": 4.794877875266777,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5403,6 +6094,9 @@
     "eligibleVoters": 118270,
     "invalidPercentage": 4.659663113769394,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5420,6 +6114,9 @@
     "eligibleVoters": 120495,
     "invalidPercentage": 5.5116981763026835,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5437,6 +6134,9 @@
     "eligibleVoters": 120229,
     "invalidPercentage": 3.325044486015422,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5454,6 +6154,9 @@
     "eligibleVoters": 139496,
     "invalidPercentage": 4.061312309576907,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5471,6 +6174,9 @@
     "eligibleVoters": 136455,
     "invalidPercentage": 3.8482631474545217,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5488,6 +6194,9 @@
     "eligibleVoters": 137314,
     "invalidPercentage": 6.268951575852247,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5505,6 +6214,9 @@
     "eligibleVoters": 139258,
     "invalidPercentage": 2.5311888387146153,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5522,6 +6234,9 @@
     "eligibleVoters": 135971,
     "invalidPercentage": 2.9359728398603737,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5539,6 +6254,9 @@
     "eligibleVoters": 133308,
     "invalidPercentage": 3.5277744160716447,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5556,6 +6274,9 @@
     "eligibleVoters": 145524,
     "invalidPercentage": 3.0099204521023375,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5573,6 +6294,9 @@
     "eligibleVoters": 157168,
     "invalidPercentage": 5.523179959989562,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5590,6 +6314,9 @@
     "eligibleVoters": 127011,
     "invalidPercentage": 2.863668098500716,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5607,6 +6334,9 @@
     "eligibleVoters": 130457,
     "invalidPercentage": 3.472400728678878,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5624,6 +6354,9 @@
     "eligibleVoters": 125833,
     "invalidPercentage": 3.192862423718407,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5641,6 +6374,9 @@
     "eligibleVoters": 122656,
     "invalidPercentage": 3.78249350785615,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5658,23 +6394,9 @@
     "eligibleVoters": 123472,
     "invalidPercentage": 3.239251143784195,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "อุดรธานี",
-    "district": 6,
-    "constituencyVoters": 80892,
-    "partyListVoters": 0,
-    "discrepancy": 80892,
-    "absDiscrepancy": 80892,
-    "winningConstituencyParty": "ภูมิใจไทย",
-    "winningPartyListParty": "ไม่ทราบ",
-    "constituencyMargin": 21546,
-    "partyListMargin": 0,
-    "invalidVotes": 2375,
-    "eligibleVoters": 126378,
-    "invalidPercentage": 2.9360134500321418,
-    "isCritical": true,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5692,23 +6414,9 @@
     "eligibleVoters": 128249,
     "invalidPercentage": 4.438022499741975,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "อุดรธานี",
-    "district": 8,
-    "constituencyVoters": 0,
-    "partyListVoters": 76245,
-    "discrepancy": -76245,
-    "absDiscrepancy": 76245,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "เพื่อไทย",
-    "constituencyMargin": 0,
-    "partyListMargin": 967,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5726,6 +6434,9 @@
     "eligibleVoters": 124798,
     "invalidPercentage": 5.733201336468259,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5743,6 +6454,9 @@
     "eligibleVoters": 122907,
     "invalidPercentage": 6.093700737751435,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5760,6 +6474,9 @@
     "eligibleVoters": 118176,
     "invalidPercentage": 3.9617751492801445,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5777,6 +6494,9 @@
     "eligibleVoters": 125051,
     "invalidPercentage": 4.5479702577183145,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5794,6 +6514,9 @@
     "eligibleVoters": 123483,
     "invalidPercentage": 5.653639212440135,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5811,6 +6534,9 @@
     "eligibleVoters": 127311,
     "invalidPercentage": 3.9983443708609268,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5828,6 +6554,9 @@
     "eligibleVoters": 134528,
     "invalidPercentage": 4.125247324131684,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5845,6 +6574,9 @@
     "eligibleVoters": 132480,
     "invalidPercentage": 4.207223875794385,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5862,6 +6594,9 @@
     "eligibleVoters": 136569,
     "invalidPercentage": 2.4728725266127207,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5879,6 +6614,9 @@
     "eligibleVoters": 139753,
     "invalidPercentage": 3.7258269245128055,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5896,6 +6634,9 @@
     "eligibleVoters": 150321,
     "invalidPercentage": 4.643442078703909,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5913,6 +6654,9 @@
     "eligibleVoters": 131064,
     "invalidPercentage": 3.556548307948706,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5930,6 +6674,9 @@
     "eligibleVoters": 132010,
     "invalidPercentage": 4.902895269867747,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5947,6 +6694,9 @@
     "eligibleVoters": 131259,
     "invalidPercentage": 2.8266366336524342,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5964,6 +6714,9 @@
     "eligibleVoters": 137335,
     "invalidPercentage": 3.1877956685907733,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5981,6 +6734,9 @@
     "eligibleVoters": 130179,
     "invalidPercentage": 4.579961026695518,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -5998,6 +6754,9 @@
     "eligibleVoters": 141083,
     "invalidPercentage": 5.50228457429693,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6015,6 +6774,9 @@
     "eligibleVoters": 135277,
     "invalidPercentage": 3.7855696968286843,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6032,6 +6794,9 @@
     "eligibleVoters": 111666,
     "invalidPercentage": 3.1921603438609605,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6049,6 +6814,9 @@
     "eligibleVoters": 112384,
     "invalidPercentage": 3.8215749380629327,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6066,6 +6834,9 @@
     "eligibleVoters": 141608,
     "invalidPercentage": 3.292260124225875,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6083,6 +6854,9 @@
     "eligibleVoters": 132614,
     "invalidPercentage": 6.353555509227547,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6100,6 +6874,9 @@
     "eligibleVoters": 139953,
     "invalidPercentage": 8.035493032919693,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6117,6 +6894,9 @@
     "eligibleVoters": 141565,
     "invalidPercentage": 5.714259023989238,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6134,23 +6914,9 @@
     "eligibleVoters": 126682,
     "invalidPercentage": 6.45461742653565,
     "isCritical": true,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "เชียงราย",
-    "district": 6,
-    "constituencyVoters": 0,
-    "partyListVoters": 85894,
-    "discrepancy": -85894,
-    "absDiscrepancy": 85894,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ประชาชน",
-    "constituencyMargin": 0,
-    "partyListMargin": 12775,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6168,6 +6934,9 @@
     "eligibleVoters": 134194,
     "invalidPercentage": 4.59408819584515,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6185,6 +6954,9 @@
     "eligibleVoters": 137824,
     "invalidPercentage": 2.405685105721997,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6202,6 +6974,9 @@
     "eligibleVoters": 143760,
     "invalidPercentage": 3.069727291945599,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6219,6 +6994,9 @@
     "eligibleVoters": 139221,
     "invalidPercentage": 3.4985605768454655,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6236,6 +7014,9 @@
     "eligibleVoters": 141156,
     "invalidPercentage": 3.2425744700959713,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6253,6 +7034,9 @@
     "eligibleVoters": 133210,
     "invalidPercentage": 4.2663263218402,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6270,6 +7054,9 @@
     "eligibleVoters": 127678,
     "invalidPercentage": 6.943897422432278,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6287,23 +7074,9 @@
     "eligibleVoters": 133190,
     "invalidPercentage": 4.78149152473518,
     "isCritical": false,
-    "dataSource": "ocr"
-  },
-  {
-    "province": "เชียงใหม่",
-    "district": 8,
-    "constituencyVoters": 0,
-    "partyListVoters": 116389,
-    "discrepancy": -116389,
-    "absDiscrepancy": 116389,
-    "winningConstituencyParty": "ไม่ทราบ",
-    "winningPartyListParty": "ประชาชน",
-    "constituencyMargin": 0,
-    "partyListMargin": 20992,
-    "invalidVotes": 0,
-    "eligibleVoters": 0,
-    "invalidPercentage": 0,
-    "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6321,6 +7094,9 @@
     "eligibleVoters": 126132,
     "invalidPercentage": 5.636029690221919,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6338,6 +7114,9 @@
     "eligibleVoters": 121655,
     "invalidPercentage": 10.524021274740605,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6355,6 +7134,9 @@
     "eligibleVoters": 125465,
     "invalidPercentage": 3.9815662638479417,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6372,6 +7154,9 @@
     "eligibleVoters": 139314,
     "invalidPercentage": 4.435876354907909,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6389,6 +7174,9 @@
     "eligibleVoters": 131561,
     "invalidPercentage": 3.6681704648866345,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6406,6 +7194,9 @@
     "eligibleVoters": 131143,
     "invalidPercentage": 4.0648665705012625,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6423,6 +7214,9 @@
     "eligibleVoters": 131081,
     "invalidPercentage": 2.5938641489850096,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6440,6 +7234,9 @@
     "eligibleVoters": 126659,
     "invalidPercentage": 3.9760289559808406,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6457,6 +7254,9 @@
     "eligibleVoters": 126049,
     "invalidPercentage": 3.8886897752291225,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6474,6 +7274,9 @@
     "eligibleVoters": 132078,
     "invalidPercentage": 6.372111777715326,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6491,6 +7294,9 @@
     "eligibleVoters": 137973,
     "invalidPercentage": 4.2340437689274895,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6508,6 +7314,9 @@
     "eligibleVoters": 125704,
     "invalidPercentage": 4.871163945078239,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6525,6 +7334,9 @@
     "eligibleVoters": 132976,
     "invalidPercentage": 7.526289314202218,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6542,6 +7354,9 @@
     "eligibleVoters": 126135,
     "invalidPercentage": 4.876192133279686,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6559,6 +7374,9 @@
     "eligibleVoters": 123919,
     "invalidPercentage": 7.578306025711899,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6576,6 +7394,9 @@
     "eligibleVoters": 122115,
     "invalidPercentage": 2.7925680834818016,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6593,6 +7414,9 @@
     "eligibleVoters": 116303,
     "invalidPercentage": 3.7379290186952656,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6610,6 +7434,9 @@
     "eligibleVoters": 121732,
     "invalidPercentage": 7.199154856016903,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6627,6 +7454,9 @@
     "eligibleVoters": 95247,
     "invalidPercentage": 5.76886397981191,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   },
   {
@@ -6644,6 +7474,9 @@
     "eligibleVoters": 96023,
     "invalidPercentage": 7.324382803155532,
     "isCritical": false,
+    "referendumTurnout": 0,
+    "turnoutDifference": 0,
+    "turnoutDiffPercentage": 0,
     "dataSource": "ocr"
   }
 ]

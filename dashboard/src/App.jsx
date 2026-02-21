@@ -119,11 +119,23 @@ function AppContent() {
         }
 
         if (ocrPlotData && ocrPlotData.length > 0) {
-          // OCR data already has region info, add it if missing
           const ocrWithRegion = ocrPlotData.map(row => ({
             ...row,
+            province: String(row.province || ''),
+            district: Number(row.district) || 0,
+            constituencyVoters: Number(row.constituencyVoters) || 0,
+            partyListVoters: Number(row.partyListVoters) || 0,
+            discrepancy: Number(row.discrepancy) || 0,
+            absDiscrepancy: Number(row.absDiscrepancy) || 0,
+            constituencyMargin: Number(row.constituencyMargin) || 0,
+            partyListMargin: Number(row.partyListMargin) || 0,
+            invalidVotes: Number(row.invalidVotes) || 0,
+            eligibleVoters: Number(row.eligibleVoters) || 0,
+            invalidPercentage: Number(row.invalidPercentage) || 0,
+            isCritical: Boolean(row.isCritical),
+            winningConstituencyParty: String(row.winningConstituencyParty || 'ไม่ทราบ'),
+            winningPartyListParty: String(row.winningPartyListParty || 'ไม่ทราบ'),
             region: row.region || getRegion(row.province),
-            // OCR data doesn't have referendum turnout
             referendumTurnout: 0,
             turnoutDifference: 0,
             turnoutDiffPercentage: 0
@@ -236,11 +248,17 @@ function AppContent() {
       }));
   }, [filteredData]);
 
+  // Referendum tab always uses ECTReport data (OCR data has no referendum info)
+  const ectFilteredData = useMemo(() => {
+    if (selectedRegion === 'ทั้งหมด') return data;
+    return data.filter(d => d.region === selectedRegion);
+  }, [data, selectedRegion]);
+
   const turnoutComparisonData = useMemo(() => {
-    return [...filteredData]
+    return [...ectFilteredData]
       .filter(d => d.turnoutDifference !== 0 && !isNaN(d.turnoutDifference))
       .sort((a, b) => b.turnoutDifference - a.turnoutDifference);
-  }, [filteredData]);
+  }, [ectFilteredData]);
 
   // --- Province Summary (using filteredData) ---
   const provinceSummary = useMemo(() => {
@@ -357,8 +375,8 @@ function AppContent() {
           </div>
           
           <div className="mt-4 md:mt-0 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            {/* Data Source Toggle */}
-            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg">
+            {/* Data Source Toggle - hidden on referendum tab (ECTReport only) */}
+            {activeTab !== 'referendum' && <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg">
               <button
                 onClick={() => setDataSource('ocr')}
                 className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
@@ -385,7 +403,7 @@ function AppContent() {
                   ECTReport 10 ก.พ. ({data.length} เขต)
                 </span>
               </button>
-            </div>
+            </div>}
 
             {/* Region Filter */}
             <div className="flex items-center gap-3">

@@ -114,7 +114,7 @@ function ProvinceAnalysis({ provinceAnalysisData, selectedRegion, setSelectedReg
                           ? 'bg-blue-100 text-blue-700' 
                           : 'bg-slate-100 text-slate-600'
                     }`}>
-                      ยอดเขย่งรวม: {netDiscrepancy > 0 ? '+' : ''}{netDiscrepancy.toLocaleString()}
+                      ยอดเขย่งรวม: {(netDiscrepancy || 0) > 0 ? '+' : ''}{(netDiscrepancy || 0).toLocaleString()}
                     </span>
                   )}
                   {!hasDiscrepancy && (
@@ -147,7 +147,7 @@ function ProvinceAnalysis({ provinceAnalysisData, selectedRegion, setSelectedReg
                             className="px-3 py-1.5 bg-red-100 text-red-700 rounded-lg text-sm font-medium flex items-center gap-2"
                           >
                             <span>เขต {district}</span>
-                            <span className="font-bold">+{discrepancy.toLocaleString()}</span>
+                            <span className="font-bold">+{(discrepancy || 0).toLocaleString()}</span>
                           </div>
                         ))}
                       </div>
@@ -168,7 +168,7 @@ function ProvinceAnalysis({ provinceAnalysisData, selectedRegion, setSelectedReg
                             className="px-3 py-1.5 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium flex items-center gap-2"
                           >
                             <span>เขต {district}</span>
-                            <span className="font-bold">{discrepancy.toLocaleString()}</span>
+                            <span className="font-bold">{(discrepancy || 0).toLocaleString()}</span>
                           </div>
                         ))}
                       </div>
