@@ -26,10 +26,15 @@ const validatePlotData = (data) => {
 
 function AppContent() {
   const [data, setData] = useState([]);
+  const [ocrData, setOcrData] = useState([]);
+  const [dataSource, setDataSource] = useState('ocr'); // 'ocr' | 'ect'
   const [activeTab, setActiveTab] = useState('overview');
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedRegion, setSelectedRegion] = useState('ทั้งหมด');
+
+  // Active dataset based on source selection
+  const activeData = dataSource === 'ocr' ? ocrData : data;
 
   // Function to process raw JSON data
   const processData = (plotData, constituencyData, referendumData) => {
@@ -97,21 +102,36 @@ function AppContent() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [plotData, constituencyData, referendumData] = await Promise.all([
+        // Load both datasets in parallel
+        const [plotData, constituencyData, referendumData, ocrPlotData] = await Promise.all([
           fetch('/plot.json').then(res => {
             if (!res.ok) throw new Error('Failed to load plot.json');
             return res.json();
           }),
           fetch('/constituency.json').then(res => res.json()).catch(() => []),
-          fetch('/referendum.json').then(res => res.json()).catch(() => [])
+          fetch('/referendum.json').then(res => res.json()).catch(() => []),
+          fetch('/plot-ocr.json').then(res => res.json()).catch(() => [])
         ]);
 
         if (plotData && plotData.length > 0) {
-          setData(processData(plotData, constituencyData, referendumData));
-          setIsLoading(false);
-        } else {
-          throw new Error('No data found in plot.json');
+          const ectProcessed = processData(plotData, constituencyData, referendumData);
+          setData(ectProcessed);
         }
+
+        if (ocrPlotData && ocrPlotData.length > 0) {
+          // OCR data already has region info, add it if missing
+          const ocrWithRegion = ocrPlotData.map(row => ({
+            ...row,
+            region: row.region || getRegion(row.province),
+            // OCR data doesn't have referendum turnout
+            referendumTurnout: 0,
+            turnoutDifference: 0,
+            turnoutDiffPercentage: 0
+          }));
+          setOcrData(ocrWithRegion);
+        }
+
+        setIsLoading(false);
       } catch (err) {
         console.error('Error loading data:', err);
         setError('ไม่สามารถโหลดข้อมูลได้ โปรดตรวจสอบว่ามีไฟล์ JSON อยู่ในโฟลเดอร์ public');
@@ -122,11 +142,11 @@ function AppContent() {
     loadData();
   }, []);
 
-  // --- Filtered Data based on Region ---
+  // --- Filtered Data based on Region (uses activeData) ---
   const filteredData = useMemo(() => {
-    if (selectedRegion === 'ทั้งหมด') return data;
-    return data.filter(d => d.region === selectedRegion);
-  }, [data, selectedRegion]);
+    if (selectedRegion === 'ทั้งหมด') return activeData;
+    return activeData.filter(d => d.region === selectedRegion);
+  }, [activeData, selectedRegion]);
 
   // --- Derived Data / KPIs (using filteredData - affected by region filter) ---
   const kpis = useMemo(() => {
@@ -336,26 +356,58 @@ function AppContent() {
             <p className="text-slate-500 mt-2">วิเคราะห์ความผิดปกติ ยอดเขย่ง และเปรียบเทียบผู้มาใช้สิทธิ์ (Election 69)</p>
           </div>
           
-          {/* Region Filter - Affects all pages */}
-          <div className="mt-4 md:mt-0 flex items-center gap-3">
-            <label htmlFor="region-filter" className="text-sm font-medium text-slate-700">ภาค:</label>
-            <select
-              id="region-filter"
-              value={selectedRegion}
-              onChange={(e) => setSelectedRegion(e.target.value)}
-              className="px-4 py-2 bg-white border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            >
-              {REGIONS.map(region => (
-                <option key={region} value={region}>{region}</option>
-              ))}
-            </select>
-            <span className="text-sm text-slate-500">
-              ({kpis?.totalDistricts || 0} เขต)
-            </span>
+          <div className="mt-4 md:mt-0 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            {/* Data Source Toggle */}
+            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg">
+              <button
+                onClick={() => setDataSource('ocr')}
+                className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
+                  dataSource === 'ocr'
+                    ? 'bg-white text-slate-900 shadow-sm'
+                    : 'text-slate-500 hover:text-slate-700'
+                }`}
+              >
+                <span className="flex items-center gap-1.5">
+                  <span className={`w-2 h-2 rounded-full ${dataSource === 'ocr' ? 'bg-green-500' : 'bg-slate-300'}`}></span>
+                  กกต. สส.6/1 ({ocrData.length} เขต)
+                </span>
+              </button>
+              <button
+                onClick={() => setDataSource('ect')}
+                className={`px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
+                  dataSource === 'ect'
+                    ? 'bg-white text-slate-900 shadow-sm'
+                    : 'text-slate-500 hover:text-slate-700'
+                }`}
+              >
+                <span className="flex items-center gap-1.5">
+                  <span className={`w-2 h-2 rounded-full ${dataSource === 'ect' ? 'bg-blue-500' : 'bg-slate-300'}`}></span>
+                  ECTReport 10 ก.พ. ({data.length} เขต)
+                </span>
+              </button>
+            </div>
+
+            {/* Region Filter */}
+            <div className="flex items-center gap-3">
+              <label htmlFor="region-filter" className="text-sm font-medium text-slate-700">ภาค:</label>
+              <select
+                id="region-filter"
+                value={selectedRegion}
+                onChange={(e) => setSelectedRegion(e.target.value)}
+                className="px-4 py-2 bg-white border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              >
+                {REGIONS.map(region => (
+                  <option key={region} value={region}>{region}</option>
+                ))}
+              </select>
+              <span className="text-sm text-slate-500">
+                ({kpis?.totalDistricts || 0} เขต)
+              </span>
+            </div>
           </div>
         </header>
 
-        {data.length === 0 ? (
+        {activeData.length === 0 ? (
           <div className="bg-white p-12 rounded-xl shadow-sm border border-slate-100 text-center flex flex-col items-center justify-center min-h-[400px]">
             <Database className="w-16 h-16 text-slate-300 mb-4" aria-hidden="true" />
             <h2 className="text-xl font-semibold text-slate-700 mb-2">กำลังรอข้อมูล...</h2>
@@ -413,15 +465,24 @@ function AppContent() {
             <p>
               <strong>ผู้จัดทำ Dashboard:</strong> Patchara Phongyeelar
             </p>
-            <p>
-              <strong>ผู้รวบรวมและวิเคราะห์ข้อมูล:</strong> Ronnakrit Rattanasriampaipong (จากโพสต์ <a href="https://www.facebook.com/PaleoLipidRR/posts/pfbid025E2GT1iqu18rpgD1dgrmHtFHmsVi8ChwUW7wMNJ8MRynB2UZGaU8RQhEVqXhV8Crl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Facebook EP.3 เรื่องบัตรเขย่ง</a>)
-            </p>
-            <p>
-              <strong>แหล่งข้อมูลตั้งต้น:</strong> ข้อมูล 94% ไม่เป็นทางการ ดึงข้อมูลจาก ECTReport ของ กกต. เมื่อวันที่ 10 ก.พ. 2569 มาจาก Rocket Media Lab <a href="https://rocketmedialab.co/database-vote62-report-69-1/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://rocketmedialab.co/database-vote62-report-69-1/</a>
-            </p>
-            <p>
-              <strong>ชุดข้อมูล (Google Sheets):</strong> <a href="https://docs.google.com/spreadsheets/d/1qHfinVgpd9CuHgk9oG4J9kbhkLnAFH0i/edit?fbclid=IwY2xjawQEyO5leHRuA2FlbQIxMABicmlkETJPV251V2h6aFh5OERGUHRRc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHqv-FX950e1tpM5zGwH_syUgWmG26-jCtEScXup-bubtVYivSacuqLX-gaW9_aem_NEJgQFhSaooMBrQREtEGLw&gid=878137751#gid=878137751" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline overflow-hidden text-ellipsis whitespace-nowrap block sm:inline">คลิกเพื่อดูไฟล์คะแนนดิบ</a>
-            </p>
+
+            {/* Dynamic source info */}
+            {dataSource === 'ocr' ? (
+              <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                <p className="font-medium text-green-800 mb-1">📋 ชุดข้อมูลปัจจุบัน: กกต. แบบ สส.6/1 (ทางการ)</p>
+                <p>ข้อมูลจากการ OCR แบบ สส.6/1 ที่ กกต. เผยแพร่เป็น PDF อย่างเป็นทางการ แปลงโดย <a href="https://github.com/nicholasgasior/election-69-OCR-result" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline font-medium">election-69-OCR-result</a> ผ่าน multi-model OCR cross-validation (Google Cloud Vision, Claude, Gemini)</p>
+                <p className="mt-1 text-green-700">ครอบคลุม {ocrData.length} เขต จาก 400 เขต</p>
+              </div>
+            ) : (
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                <p className="font-medium text-blue-800 mb-1">📊 ชุดข้อมูลปัจจุบัน: ECTReport 10 ก.พ. 2569 (ไม่เป็นทางการ)</p>
+                <p>
+                  <strong>ผู้รวบรวมและวิเคราะห์ข้อมูล:</strong> Ronnakrit Rattanasriampaipong (จากโพสต์ <a href="https://www.facebook.com/PaleoLipidRR/posts/pfbid025E2GT1iqu18rpgD1dgrmHtFHmsVi8ChwUW7wMNJ8MRynB2UZGaU8RQhEVqXhV8Crl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Facebook EP.3 เรื่องบัตรเขย่ง</a>)
+                </p>
+                <p className="mt-1">ข้อมูล 94% ไม่เป็นทางการ ดึงจาก ECTReport ของ กกต. เมื่อวันที่ 10 ก.พ. 2569 มาจาก Rocket Media Lab <a href="https://rocketmedialab.co/database-vote62-report-69-1/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">rocketmedialab.co</a></p>
+                <p className="mt-1"><strong>ชุดข้อมูล (Google Sheets):</strong> <a href="https://docs.google.com/spreadsheets/d/1qHfinVgpd9CuHgk9oG4J9kbhkLnAFH0i/edit?gid=878137751#gid=878137751" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">คลิกเพื่อดูไฟล์คะแนนดิบ</a></p>
+              </div>
+            )}
           </div>
         </div>
       </footer>

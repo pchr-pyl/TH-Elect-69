@@ -5,19 +5,19 @@ const iconv = require('iconv-lite');
 
 const filesToProcess = [
   {
-    input: 'ElectionData-Analysis-Public - Plot.csv',
+    input: 'data-raw/ElectionData-Analysis-Public - Plot.csv',
     output: 'plot.json'
   },
   {
-    input: 'ElectionData-Analysis-Public - สสแบ่งเขต.csv',
+    input: 'data-raw/ElectionData-Analysis-Public - สสแบ่งเขต.csv',
     output: 'constituency.json'
   },
   {
-    input: 'ElectionData-Analysis-Public - party list.csv',
+    input: 'data-raw/ElectionData-Analysis-Public - party list.csv',
     output: 'partylist.json'
   },
   {
-    input: 'ElectionData-Analysis-Public - referendum.csv',
+    input: 'data-raw/ElectionData-Analysis-Public - referendum.csv',
     output: 'referendum.json'
   }
 ];
@@ -26,7 +26,7 @@ function processFile(fileConfig) {
   return new Promise((resolve, reject) => {
     const results = [];
     const inputPath = path.join(__dirname, fileConfig.input);
-    const outputPath = path.join(__dirname, 'dashboard', 'public', fileConfig.output);
+    const outputPath = path.join(__dirname, 'data-processed', fileConfig.output);
 
     if (!fs.existsSync(inputPath)) {
       console.warn(`Warning: File not found: ${inputPath}`);
