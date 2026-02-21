@@ -395,11 +395,12 @@ function AppContent() {
               </button>
               <button
                 onClick={(e) => { e.stopPropagation(); setShowOcrModal(true); }}
-                className="p-1.5 rounded-md text-slate-400 hover:text-green-600 hover:bg-green-50 transition-colors"
+                className="flex items-center gap-1 px-2 py-1 rounded-md text-xs font-medium text-green-700 bg-green-100 border border-green-300 hover:bg-green-200 transition-colors"
                 title="ดูข้อมูลความครอบคลุม"
                 aria-label="ข้อมูลชุดข้อมูล กกต. สส.6/1"
               >
-                <Info className="w-3.5 h-3.5" />
+                <Info className="w-3 h-3" />
+                <span>ข้อมูล</span>
               </button>
               <button
                 onClick={() => setDataSource('ect')}
@@ -499,8 +500,8 @@ function AppContent() {
             {dataSource === 'ocr' ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-3">
                 <p className="font-medium text-green-800 mb-1">📋 ชุดข้อมูลปัจจุบัน: กกต. แบบ สส.6/1 (ทางการ)</p>
-                <p>ข้อมูลจากการ OCR แบบ สส.6/1 ที่ กกต. เผยแพร่เป็น PDF อย่างเป็นทางการ แปลงโดย <a href="https://github.com/nicholasgasior/election-69-OCR-result" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline font-medium">election-69-OCR-result</a> ผ่าน multi-model OCR cross-validation (Google Cloud Vision, Claude, Gemini)</p>
-                <p className="mt-1 text-green-700">ครอบคลุม {ocrData.length} เขต จาก 400 เขต</p>
+                <p>ข้อมูลจากการ OCR แบบ สส.6/1 ที่ กกต. เผยแพร่เป็น PDF อย่างเป็นทางการ แปลงโดย <a href="https://github.com/killernay/election-69-OCR-result" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:underline font-medium">election-69-OCR-result</a> ผ่าน multi-model OCR cross-validation (Google Cloud Vision, Claude, Gemini)</p>
+                <p className="mt-1 text-green-700">จัดทำโดย <span className="font-semibold">ชานนท์ เงินทองดี (Chanon Ngernthongdee)</span> · ครอบคลุม {ocrData.length} เขต จาก 400 เขต</p>
               </div>
             ) : (
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
